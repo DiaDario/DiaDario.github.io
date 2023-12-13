@@ -60,7 +60,7 @@
     }
   }
   .menu {
-    display: block;
+    display: inline-block;
   }
 
   .resize-button, .refresh-icon {
@@ -75,7 +75,7 @@
     right: 0;
     bottom: 0;
     width: 30vw;
-    background-color: rgba($background-color, 0.8);
+    background-color: rgba($background-color, 0.9);
     box-shadow: 0 14px 28px rgba(black, 0.12), 0 10px 10px rgba(black, 0.10); 
     z-index: 100;
     justify-content: initial;
@@ -386,10 +386,6 @@
     .project-info {
       width: Max(180px, 22vw);
       height: Max(180px, 22vw);
-
-      p {
-        font-size: 0.7rem;
-      }
     }
   }
   
