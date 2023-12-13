@@ -941,6 +941,9 @@ footer .job {
   .tooltip {
     display: none;
   }
+  .skill-card .tooltip {
+    display: block;
+  }
   .projects-content i {
     display: block;
   }
@@ -1178,9 +1181,6 @@ footer .job {
   }
 }
 @media (max-width: 480px) {
-  .tooltip {
-    display: block;
-  }
   .navbar {
     width: max(140px, 50vw);
   }

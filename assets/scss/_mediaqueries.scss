@@ -2,6 +2,10 @@
   .tooltip {
     display: none;
   }
+
+  .skill-card .tooltip {
+    display: block;
+  }
  
   .projects-content {
     i {
@@ -323,13 +327,7 @@
 }
 
 @media (max-width: 480px){
-  //General styles
-  .tooltip {
-    display: block;
-  }
-
   //header
-
   .navbar {
     width: Max(140px, 50vw);
 
