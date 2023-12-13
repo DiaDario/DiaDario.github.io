@@ -1191,7 +1191,7 @@ footer .job {
     flex-wrap: wrap;
   }
   .progress-container {
-    width: max(220px, 60vw);
+    width: max(220px, 70vw);
     padding: 7px;
   }
   .progress-container .progress-bar {
@@ -1204,7 +1204,7 @@ footer .job {
     display: none;
   }
   .skill-card {
-    margin-left: 20px;
+    align-items: center;
   }
   .projects-content {
     gap: 30px;
