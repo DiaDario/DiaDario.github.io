@@ -1046,6 +1046,13 @@ footer .job {
     flex-direction: row;
     justify-content: space-between;
   }
+  .contact-left-content .social-icons-container {
+    margin-bottom: 0;
+  }
+  .contact-left-content .og-logo-container {
+    display: flex;
+    align-items: center;
+  }
   .contact-left-content .description {
     flex: 0.6;
   }

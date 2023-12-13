@@ -148,6 +148,15 @@
     flex-direction: row;
     justify-content: space-between;
 
+    .social-icons-container {
+      margin-bottom: 0;
+    }
+
+    .og-logo-container {
+      display: flex;
+      align-items: center;
+    }
+
     .description {
       flex: 0.6;
     }
@@ -361,7 +370,6 @@
   }
   
   //projects
-
   .projects-content {
     gap: 30px;
   
