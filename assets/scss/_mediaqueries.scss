@@ -228,6 +228,13 @@
 }
 
 @media (max-width: 768px){
+  .tooltip {
+    display: none;
+  }
+
+  .skill-card .tooltip {
+    display: block;
+  }
   //header
   .navbar {
     width: 40vw;
