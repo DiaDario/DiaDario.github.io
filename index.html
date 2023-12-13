@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/20f0291156.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script defer src="assets/js/index.js"></script>
+    <title>Dario Diana | Portfolio </title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="assets/images/main_logo.svg" alt="logo">
+        </div>
+        <div class="resize-button" onclick="toggleZoom()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="tooltip">Make it bigger!</div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <a href="#home">Home</a>  
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contacts</a>
+      </nav>
+      <div class="menu" onclick="toggleMobileMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <section id="home"> 
+      <div class="home-left-content">
+        <div class="info">
+          <h1>
+            Hi! I'm Dario Diana
+          </h1>
+          <h3>
+            Web Developer
+          </h3>
+          <p>
+          Specializing as a Full Stack Developer
+          </p>
+        </div>
+        <div class="social-icons-container">
+          <a href="https://github.com/DiaDario" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <div class="tooltip">GitHub</div>
+          </a>
+          <a href="https://www.linkedin.com/in/dario-diana-057382204/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div class="tooltip">LinkedIn</div>
+          </a>    
+          <a href="https://www.facebook.com/profile.php?id=61554154749991" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            <div class="tooltip">Facebook</div>
+          </a>
+          <a href="https://www.instagram.com/d.ia.dario/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="tooltip">Instagram</div>
+          </a>
+        </div>
+        <div class="buttons-container">
+          <a href="cv.html" target="_blank"><button class="button1">Read CV</button></a>
+          <a href="#contact"><button class="button2">Contact me</button></a>
+        </div>
+      </div>
+      <div class="home-right-content">
+        <div class="picture-container">
+          <img class="developer-drawing" src="assets/images/undraw_programming_re_kg9v.svg" alt="developer-drawing">
+        </div>
+        <div class="profile-picture-container">
+          <img src="assets/images/foto.jpg"> 
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="heading">
+        <h3>About</h3>
+      </div>
+      <div class="about-content">
+        <div class="about-left-content">
+          <div class="profile-picture-container">
+            <img src="assets/images/foto.jpg"> 
+          </div>
+          <div class="personal-data">
+            <div class="data">
+              <h5>Data di nascita</h5>
+              <p>14/12/2000</p>
+            </div>
+            <div class="data">
+              <h5>Nazionalità</h5>
+              <p>Italiana</p>
+            </div>
+            <div class="data">
+              <h5>Lingue parlate</h5>
+              <p>Italiano, Inglese</p> 
+            </div>   
+          </div>
+        </div>
+        <div class="about-right-content">
+          <div class="text-container">
+            <p>
+            Nato e cresciuto in Italia, diplomato al liceo scientifico all'età di 18 anni. Sin da ragazzino &lpar;da quando ho assemblato il mio primo computer fisso&rpar; sono stato un appassionato di computer e tecnologia, in generale ho sempre avuto un interesse maggiore per le materie scientifche. Appena terminato il liceo i dubbi erano diversi così come lo erano i percorsi di studio che mi interessavano. La mia prima scelta è ricaduta per la facoltà d'Informatica e in seguito per Data Analytics, ero intrigato dagli argomenti che studiavo ma sentivo che mancava qualcosa. 
+
+            <br><br> Avendo chiaro che la macroarea di mio interesse fosse quella del digitale, ho iniziato ad approfondire quali fossero le alternative disponibili ad un percorso di studi tradizionale e mi sono imbattuto in <a href="https://www.start2impact.it/" target="_blank">Start2Impact,</a> un'azienda italiana devota all'insegnamento teorico e pratico di quelle che sono le discipline appartenenti al mondo del digitale. 
+
+            <br><br>Il motivo per cui tra le tante piattaforme online ho scelto quest'ultima è principalmente uno: <strong>PROGETTI.</strong>
+            L'idea di mettermi all'opera creando dei progetti pratici al termine di ogni sezione del corso (col feedback di uno o più esperti del settore), mi ha affascinato sin da subito, integrare una parte pratica durante lo studio di una disciplina mi ha da sempre stimolato.
+    
+            <br><br>Dopo aver valutato attentamente i vari corsi presenti sulla piattaforma presi una decisione: sarò un <strong>Full Stack Developer.</strong> 
+            </p>
+          </div>      
+        </div>
+      </div>             
+    </section>
+
+    <section id="skills">
+      <div class="heading">
+        <h3>Skills</h3>
+      </div>
+      <div class="skills-content">
+        <div class="skills-left-content"> 
+          <div class="text-container">  
+            <p>
+              <span>Piuttosto che elencare in maniera scritta le mie capacità, preferisco mostrarle graficamente: le seguenti card indicano il progresso attuale e futuro delle mie conoscenze nel mondo della programmazione. Questa sezione sarà in continuo aggiornamento e verrà modificata di pari passo con i miei progressi nello studio di nuovi linguaggi, tecniche e framework.
+              </br></br></span>
+              Il motivo per cui le barre di progresso non saranno mai del tutto piene è perchè credo che in quest'ambito non si possa mai inserire una conoscenza al 100%; che si tratti di un linguaggio di markup come HTML o un linguaggio di programmazione puro, sono dell'idea che l'unico modo per avere una conoscenza piena dell'argomento è esser consapevoli di averla perennemente incompleta.
+            </br></br>
+              Infine ci tengo a precisare che i linguaggi e i framework inseriti all'interno della sezione sono quelli che ho scelto di studiare in sequenza ma non saranno gli unici, come ho già detto il mondo dell'informatica è in continua espansione e il mio desiderio è quello di crescere assieme ad esso.
+            </p>
+        </div>
+        </div>
+        <div class="skills-right-content">
+          <div class="refresh-icon">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </div>
+          <div class="skill-card">
+            <div class="progress-container">
+              <div class="icon">
+                <img src="assets/icons/html-5-svgrepo-com.svg">
+              </div>
+              <div class="progress-bar">
+                <p>HTML</p>
+                <span class="bar">
+                  <span class="html"></span>
+                </span>
+              </div>
+              <div class="tooltip">95%</div>
+            </div>
+            <div class="progress-container">
+              <div class="icon">
+                <img src="assets/icons/css-svgrepo-com.svg">
+              </div>
+              <div class="progress-bar">
+                <p>CSS</p>
+                <span class="bar">
+                  <span class="css"></span>
+                </span>
+              </div>
+              <div class="tooltip">90%</div>
+            </div>
+            <div class="progress-container">
+              <div class="icon">
+                <img src="assets/icons/javascript-svgrepo-com.svg">
+              </div>
+              <div class="progress-bar">
+                <p>Javascript</p>
+                <span class="bar">
+                  <span class="javascript"></span>
+                </span>
+              </div>
+              <div class="tooltip">5%</div>
+            </div>
+            <div class="progress-container">
+              <div class="icon">
+                <img src="assets/icons/react-javascript-js-framework-facebook-svgrepo-com.svg">
+              </div>
+              <div class="progress-bar">
+                <p>React</p>
+                <span class="bar">
+                  <span class="react"></span>
+                </span>
+              </div>
+              <div class="tooltip"></div>
+            </div>
+            <div class="progress-container">
+              <div class="icon">
+                <img src="assets/icons/java-svgrepo-com.svg">
+              </div>
+              <div class="progress-bar">
+                <p>Java</p>
+                <span class="bar">
+                  <span class="java"></span>
+                </span>
+                <div class="tooltip"></div>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="heading">
+        <h3>Projects</h3>
+      </div>
+      <div class="projects-content">
+        <i class="fa-solid fa-angles-left" onclick="moveProject(-1)"></i>
+        <div class="project-card" id="project1">
+          <div class="card">
+            <img src="assets/images/Project1.png">
+            <div class="hover-card">
+              <h2>Portfolio Website</h2>
+              <p>
+                Il sito che state visitando è il mio primo progetto nel mondo della programmazione. Creato utilzzando <b>HTML</b>, <b>SASS</b> (preprocessore di <b>CSS</b>) e <b>Javascript</b>. Se interessati al codice è possibile visionarlo su <a target="_blank" href="https://github.com/DiaDario/portfolio-website.git">GitHub.</a>
+              </p>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2>Portfolio Website</h2>
+            <p>
+              Il sito che state visitando è il mio primo progetto nel mondo della programmazione. Creato utilzzando <b>HTML</b>, <b>SASS</b> (preprocessore di <b>CSS</b>) e <b>Javascript</b>. Se interessati al codice è possibile visionarlo su <a target="_blank" href="https://github.com/DiaDario/portfolio-website.git">GitHub.</a>
+            </p>
+          </div>
+        </div>
+        <div class="project-card hidden" id="project2">
+          <div class="card">
+            <p class="to-be-added">+</p>
+            <div class="hover-card">
+              <h2>Progetto 2</h2>
+              <p>
+                Il progetto verrà caricato non appena disponibile.
+              </p>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2>Progetto 2</h2>
+            <p>
+              Il progetto verrà caricato non appena disponibile.
+            </p>
+          </div>
+        </div>
+        <div class="project-card hidden" id="project3">
+          <div class="card">
+            <p class="to-be-added">+</p>
+            <div class="hover-card">
+              <h2>Progetto 3</h2>
+              <p>
+                Il progetto verrà caricato non appena disponibile.
+              </p>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2>Progetto 3</h2>
+            <p>
+              Il progetto verrà caricato non appena disponibile.
+            </p>
+          </div>
+        </div>
+        <i class="fa-solid fa-angles-right" onclick="moveProject(1)"></i>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="heading">
+        <h3>Contacts</h3>
+      </div>
+      <div class="contact-content">
+        <div class="contact-left-content">
+          <div class="description">
+            <div class="text-container">
+              <h4>Lavoriamo insieme!</h4>
+              <p><span class="long-text">Se ti va di contattarmi direttamente da questo sito puoi farlo liberamente grazie al form qui presente. Sentiti libero di chiedere ciò che vuoi, sarò più che felice di rispondere!<br><br></span><span>In alternativa al form puoi contattarmi in privato su uno dei seguenti social:</p></span>
+            </div>
+            <div class="social-icons-container">
+              <a href="https://twitter.com/SirDiaD" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <div class="tooltip">X/Twitter</div>
+              </a>
+              <a href="https://www.linkedin.com/in/dario-diana-057382204/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <div class="tooltip">LinkedIn</div>
+              </a>    
+              <a href="https://www.facebook.com/profile.php?id=61554154749991" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+                <div class="tooltip">Facebook</div>
+              </a>
+              <a href="https://www.instagram.com/d.ia.dario/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <div class="tooltip">Instagram</div>
+              </a>
+            </div>
+          </div>
+          <div class="og-logo-container">
+            <img src="assets/images/OG TAG logo.svg">
+          </div>
+        </div>
+        <div class="contact-right-content">
+          <form id="myForm">
+            <label for="name">
+              Nome privato/azienda <span>(obbligatorio)</span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="Larry Page / Google" autocomplete="off" required>
+        
+            <label for="email">
+              Email <span>(obbligatoria)</span>
+            </label>
+            <input type="email" id="email" name="email" autocomplete="off" placeholder="WantToHireYou@gmail.com" required>
+        
+            <label for="message">
+            Messaggio <span>(obbligatorio)</span>
+            </label>
+
+            <textarea id="message" name="message" required></textarea>
+            
+            <div class="button-container">
+            <button type="submit">
+              INVIA
+            </button>
+              <div id="messageSent">
+                Messaggio inviato con successo.
+              </div>
+              <div id="messageFailed">
+                C'è stato un errore durante l'invio, per favore controlla di aver compilato correttamente tutti i campi o riprova più tardi.  
+              </div>
+          </div>   
+        </form>
+        </div>
+      </div>   
+    </section>
+    
+    <footer>
+      <p>
+        &copy; 2023 Dario Diana  
+          <span class="job">
+            | Full Stack Developer.
+          </span>
+          <span class="reserved">
+            All Rights Reserved.
+          </span> 
+      </p>
+    </footer>
+  </body>
+</html>
+

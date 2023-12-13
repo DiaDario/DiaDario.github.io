@@ -1,0 +1,68 @@
+//Background extensions
+%background-dark {
+  background-image: radial-gradient($background-dot-color 1px, transparent 1px), radial-gradient($background-dot-color 1px, transparent 1px);
+  background-size: 14px 14px;
+  background-position: 0 0, 7px 7px;
+  background-color: $background-color;
+}
+
+%background-light {
+  background-image: radial-gradient($background-dot-color2 1px, transparent 1px), radial-gradient($background-dot-color2 1px, transparent 1px);
+  background-size: 14px 14px;
+  background-position: 0 0, 7px 7px;
+  background-color: $background-color2;
+}
+
+%background-purple {
+  background-image: radial-gradient($background-dot-color3 1px, transparent 1px), radial-gradient($background-dot-color3 1px, transparent 1px);
+  background-size: 14px 14px;
+  background-position: 0 0, 7px 7px;
+  background-color: $background-color3;
+}
+
+//Recurrent elements/properties extensions
+
+%btn {
+  width: clamp(105px, 7vw, 135px); 
+  height: clamp(40px, 2.4vw, 46px);
+  font-size: clamp(0.75rem, 0.7vw, 0.875rem); 
+  font-weight: 600;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+%section {
+  padding: Max(20px, 2%) 10% Max(20px, 5%) 10%;
+  scroll-margin-top: clamp(59px, 7.98vh, 89px);
+  height: auto;
+  min-height: Min(880px, 92vh);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 5vw, 98px);
+
+  .heading {
+    display: flex;
+    padding-bottom: clamp(4px, 0.3vw, 6px);
+
+    h3 {
+      font-size: clamp(1.1rem, 1.15vw, 1.375rem);
+    }
+  }
+}
+
+%section-content {
+  flex: 1;
+  display: flex;
+  gap: clamp(50px, 8vw, 155px);
+}
+
+%tooltip {
+  opacity: 0;
+  position: absolute;
+  top: 120%;
+  font-size: clamp(0.65rem, 0.6vw, 0.72rem);
+  font-weight: 500;
+  transition: opacity 0.2s linear;
+  text-wrap: nowrap;  
+}

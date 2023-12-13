@@ -1,0 +1,208 @@
+#contact {
+  @extend %section;
+  @extend %background-light;
+  min-height: 87vh;
+
+  .heading {
+    border-bottom: 2px solid rgb(190, 190, 190);
+
+    h3 {
+    color: $secondary-color2; 
+    }
+  }
+}
+
+.contact-content {
+  @extend %section-content;
+}
+
+//Left section
+
+.contact-left-content {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+  .description {
+    .text-container {
+      margin-bottom: 15px;
+
+      h4 {
+        font-size: clamp(0.9rem, 0.96vw, 1.15rem);
+        margin-bottom: 15px;
+      }
+    
+      p {
+        line-height: 1.7;
+        font-size: clamp(0.9rem, 0.85vw, 1.02rem);
+      }
+    }
+
+    .social-icons-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: clamp(140px, 8.5vw, 170px);
+      margin-left: 5px;
+      margin-bottom: 20px;
+    
+      .tooltip {
+        @extend %tooltip;
+        right: 0;
+        color: $primary-color2;
+      }
+
+      a {
+        position: relative;
+        font-size: clamp(1.15rem, 1.1vw, 1.32rem);
+        text-decoration: none;
+        color: $primary-color2;
+        transition: 0.2s;
+  
+        &:hover .tooltip {
+          opacity: 1;
+        }
+  
+        &:hover {
+          color: $secondary-color2;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
+//Defining OG Logo
+  .og-logo-container {
+    width: clamp(170px, 10vw, 195px);
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+      transform: translateY(-2px);
+    }
+  
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+}
+
+
+//Right section
+
+.contact-right-content {
+    flex: 1;
+    display: flex;
+}
+
+#myForm {
+    position: relative;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    label {
+        color: $secondary-color2;
+        font-weight: 600;
+        font-size: clamp(0.8rem, 0.8vw, 0.96rem);
+
+        span {
+            font-size: clamp(0.75rem, 0.75vw, 0.9rem);
+            opacity: 0.7;
+            letter-spacing: 0.2px;
+            color: $primary-color2;
+        }
+    }
+
+    input {
+        height: 50px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        background-color: $primary-color2;
+        font-weight: 600;
+        padding: 10px;
+        background-color: $background-color2;
+        border: 1px solid $primary-color2;
+        color: $primary-color2;
+        font-family: $font-stack;
+        font-size: clamp(0.9rem, 0.85vw, 1.02rem);
+    }
+
+    textarea {
+        height: 200px;
+        border-radius: 8px;
+        padding: 10px 10px;
+        font-size: clamp(0.9rem, 0.8vw, 0.96rem);
+        background-color: $background-color2;
+        border: 1px solid $primary-color2;
+        color: $primary-color2;
+        font-family: $font-stack;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px
+    }
+
+    button {
+        @extend %btn;
+        background-color: rgb(178, 240, 178);
+        border: 1px solid $secondary-color2;
+        position: relative;
+        transition: 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+          transform: translateY(-2px);
+        }
+    }
+
+    #messageFailed, #messageSent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px; 
+      color: black;
+      font-weight: 600;
+      font-size: clamp(0.7rem, 0.6vw, 0.73rem);
+      padding: 8px;
+    }
+
+    #messageFailed {
+        display: none;
+        background-color: rgba(255,0,0, 0.4);
+        width: clamp(250px, 16vw, 308px); 
+    }
+
+    #messageSent {
+        display: none;
+        background-color: rgba(96, 241, 96, 0.6);
+        color: black;
+        width: 220px;
+        height: 40px;
+    }
+}
+
+footer {
+  background-color: $background-color;
+  color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+  font-size: clamp(0.75rem, 0.7vw, 0.84rem);
+
+  .job {
+    color: $secondary-color;
+  }
+}
+

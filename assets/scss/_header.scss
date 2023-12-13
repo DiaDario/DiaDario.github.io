@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $background-color;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  height: clamp(60px, 8vh, 90px);
+  transition: 0.1s linear;
+  z-index: 100;
+}
+
+.logo-container {
+  width: 120px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0.3%;
+  align-self: center;
+  transition: 0.2s;
+}
+
+.logo {
+  width: 70px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+  }
+
+  &.active {
+    transform: scale(2) translate(30px, 70px);
+    background-color: rgba($background-color, 0.6);
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 70px;
+}
+
+  
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.resize-button {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 700;
+  color: $primary-color;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  opacity: 0.8;
+
+  &.active {
+    color: $secondary-color;
+
+    &:hover .tooltip {
+      display: none;
+    }
+  }
+
+  .tooltip {
+    @extend %tooltip;
+    top: 30%;
+    left: 160%;
+  }
+
+  &:hover .tooltip {
+    opacity: 1;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  width: clamp(320px, 18.8vw, 365px);
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+
+  &.dropdown {
+      display: flex;
+  }
+
+  a {
+    font-size: clamp(1.05rem, 0.97vw, 1.19rem);
+    font-weight: 600;
+    color: $primary-color;
+    text-decoration: none;
+    position: relative;
+    transition: 0.2s;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+//menu for devices max-width 1200px
+
+.menu {
+  display: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $primary-color;
+  align-self: center;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &.active {
+    color: $secondary-color;
+    transform: rotate(90deg); 
+  }
+
+  &:hover {
+    opacity: 0.8;
+    font-size: 1.25rem;
+  }
+}

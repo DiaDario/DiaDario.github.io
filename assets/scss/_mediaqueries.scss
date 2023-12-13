@@ -1,0 +1,395 @@
+@media (hover: none){
+  .tooltip {
+    display: none;
+  }
+ 
+  .projects-content {
+    i {
+      display: block;
+    }
+
+    .hidden {
+      opacity: 0;
+      position: absolute;
+      transform: translateX(100%);
+      pointer-events: none;
+    }
+
+    .card {
+      width: clamp(230px, 17vw, 330px);
+      height: clamp(230px, 17vw, 330px);
+
+      &:hover {
+        transform: translateY(0);
+      }
+    }
+
+    .project-info {
+      display: block;
+      width: clamp(230px, 17vw, 330px);
+      height: clamp(230px, 17vw, 330px);
+
+      h2 {
+        font-size: clamp(1rem, 1.14vw, 1.37rem);
+      }
+  
+      p {
+        font-size: clamp(0.8rem, 0.9vw, 1.08rem);
+      }
+    }
+  }
+
+  .hover-card {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px){
+  .curriculum {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px){
+  //header 
+  .logo {
+    width: 65px;
+
+    &.active {
+      height: 65px;
+    }
+  }
+  .menu {
+    display: block;
+  }
+
+  .resize-button, .refresh-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: Max(60px, 8vh);
+    right: 0;
+    bottom: 0;
+    width: 30vw;
+    background-color: rgba($background-color, 0.8);
+    box-shadow: 0 14px 28px rgba(black, 0.12), 0 10px 10px rgba(black, 0.10); 
+    z-index: 100;
+    justify-content: initial;
+    padding-top: Max(25px, 5%);
+    gap: 30px;
+
+    a {
+      font-size: 1rem;
+      color: $primary-color;
+    }
+  }
+
+
+  //about section
+  .about-right-content {
+    justify-content: initial;
+
+    .text-container {
+      width: 100%;
+    }
+  }
+  
+  
+  //skills section
+  .skills-left-content {
+    .text-container {
+    width: 100%;
+    }
+  }
+
+  //projects
+  .projects-content {
+    i {
+      display: block;
+    }
+
+    .hidden {
+      opacity: 0;
+      position: absolute;
+      transform: translateX(100%);
+      pointer-events: none;
+    }
+
+    .card {
+      width: Max(230px, 22vw);
+      height: Max(230px, 22vw);
+
+      &:hover {
+        transform: translateY(0);
+      }
+    }
+
+    .project-info {
+      display: block;
+      width: Max(230px, 22vw);
+      height: Max(230px, 22vw);
+    }
+  }
+
+  .hover-card {
+    display: none;
+  }
+
+  //contact section
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-left-content {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .description {
+      flex: 0.6;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  //home section
+  #home {
+    gap: 40px;
+  }
+
+  .home-left-content {
+    flex: initial;
+    order: 1;
+    
+    .social-icons-container {
+      margin-bottom: 20px;
+    }
+  }
+
+  .home-right-content {
+    flex: initial;
+
+    &::before {
+      display: none;
+    }
+
+    .picture-container {
+      display: none;
+    }
+
+    .profile-picture-container {
+      display: block;
+    }
+  }
+
+  //about 
+  .about-left-content {
+    display: none;
+  }
+
+  //skills
+  .skills-content {
+    flex-direction: column;
+  }
+
+  .skill-card {
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .progress-container {
+    width: 250px;
+    padding: 10px;
+  }
+
+  //projects
+  .projects-content {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px){
+  //header
+  .navbar {
+    width: 40vw;
+  }
+  
+  //home
+  #home {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .home-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+
+      h1 {
+        font-size: clamp(1.1rem, 4vw, 1.3rem);
+      }
+
+      h3 {
+        font-size: clamp(1rem, 3.5vw, 1.1rem);
+      }
+
+      p {
+        font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .home-right-content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  //skills
+  .skill-card {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  
+  .progress-container {
+    width: 280px;
+  }
+
+  //projects
+  .projects-content i {
+    height: 290px;
+  }
+  
+  .project-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  //contacts
+  .contact-left-content {
+    flex: 1;
+
+    .description {
+      flex: 1;
+    }
+
+    .og-logo-container {
+      display: none;
+    }
+  }
+
+  //contact
+  .contact-content {
+    gap: 20px;
+  }
+  
+  .contact-left-content {
+    flex: initial;
+
+    .text-container {
+      margin-bottom: 8px;
+
+      h4 {
+        display: none;
+      }
+
+      .long-text {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+  //General styles
+  .tooltip {
+    display: none;
+  }
+
+  //header
+
+  .navbar {
+    width: Max(140px, 50vw);
+
+    a {
+      font-size: 0.96rem;
+    }
+  }
+
+  //home
+  .buttons-container {
+    justify-content: center;
+    width: initial;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  //skills
+  .progress-container {
+    width: Max(220px, 60vw);
+    padding: 7px;
+
+    .progress-bar {
+      width: 85%;
+    }
+  }
+
+  //skills
+  .skills-left-content {
+    order: 1;
+
+    .text-container span {
+      display: none;
+    }
+  }
+
+  .skill-card {
+    margin-left: 20px;
+  }
+  
+  //projects
+
+  .projects-content {
+    gap: 25px;
+  
+    i {
+      height: 230px;
+    }
+}
+  .project-card {
+    .card {
+      width: Max(180px, 22vw);
+      height: Max(180px, 22vw);
+    }
+
+    .project-info {
+      width: Max(180px, 22vw);
+      height: Max(180px, 22vw);
+
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  
+  //footer
+  footer .reserved {
+    display: none;
+  }
+}
+
+
+
