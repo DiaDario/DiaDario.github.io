@@ -999,7 +999,7 @@ footer .job {
     position: fixed;
     top: max(60px, 8vh);
     right: 0;
-    bottom: 0;
+    height: 100%;
     width: 30vw;
     background-color: rgba(44, 44, 44, 0.9);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -1111,9 +1111,6 @@ footer .job {
   .tooltip {
     display: none;
   }
-  .skill-card .tooltip {
-    display: block;
-  }
   .navbar {
     width: 40vw;
   }
@@ -1214,6 +1211,9 @@ footer .job {
   }
   .skill-card {
     align-items: center;
+  }
+  .skill-card .tooltip {
+    display: block;
   }
   .projects-content {
     gap: 30px;

@@ -77,7 +77,7 @@
     position: fixed;
     top: Max(60px, 8vh);
     right: 0;
-    bottom: 0;
+    height: 100%;
     width: 30vw;
     background-color: rgba($background-color, 0.9);
     box-shadow: 0 14px 28px rgba(black, 0.12), 0 10px 10px rgba(black, 0.10); 
@@ -228,12 +228,9 @@
 }
 
 @media (max-width: 768px){
+
   .tooltip {
     display: none;
-  }
-
-  .skill-card .tooltip {
-    display: block;
   }
   //header
   .navbar {
@@ -372,6 +369,10 @@
 
   .skill-card {
     align-items: center;
+
+    .tooltip {
+      display: block;
+    }
   }
   
   //projects
