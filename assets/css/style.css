@@ -84,7 +84,7 @@ button, #myForm button {
   flex-wrap: wrap;
 }
 .personal-info p {
-  background-color: rgba(243, 250, 185, 0.9);
+  background-color: rgb(243, 250, 185);
   color: black;
   font-weight: 600;
   font-size: clamp(0.9rem, 0.8vw, 1rem);
@@ -1136,7 +1136,7 @@ footer .job {
     width: 280px;
   }
   .projects-content i {
-    height: 290px;
+    margin-bottom: 260px;
   }
   .project-card {
     flex-direction: column;
@@ -1200,10 +1200,10 @@ footer .job {
     margin-left: 20px;
   }
   .projects-content {
-    gap: 25px;
+    gap: 30px;
   }
   .projects-content i {
-    height: 230px;
+    margin-top: 60px;
   }
   .project-card .card {
     width: max(180px, 22vw);
