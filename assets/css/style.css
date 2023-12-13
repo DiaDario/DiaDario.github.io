@@ -613,7 +613,7 @@ button, #myForm button {
 }
 
 .css {
-  width: 90%;
+  width: 95%;
   animation: css 3s;
 }
 
@@ -1176,7 +1176,7 @@ footer .job {
 }
 @media (max-width: 480px) {
   .tooltip {
-    display: none;
+    display: block;
   }
   .navbar {
     width: max(140px, 50vw);
