@@ -16,7 +16,7 @@
   width: 120px;
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   align-items: center;
   left: 0.3%;
   align-self: center;
@@ -50,8 +50,7 @@
 }
 
 .resize-button {
-  margin: 0 auto;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: $primary-color;
   cursor: pointer;
@@ -66,22 +65,12 @@
       display: none;
     }
   }
-
-  .tooltip {
-    @extend %tooltip;
-    top: 30%;
-    left: 160%;
-  }
-
-  &:hover .tooltip {
-    opacity: 1;
-  }
 }
 
 
 .navbar {
   display: flex;
-  width: clamp(320px, 18.8vw, 365px);
+  width: clamp(350px, 19.2vw, 375px);
   justify-content: space-between;
   align-items: center;
   transition: 0.3s ease-in-out;
@@ -91,7 +80,7 @@
   }
 
   a {
-    font-size: clamp(1.05rem, 0.97vw, 1.19rem);
+    font-size: clamp(1.1rem, 0.97vw, 1.19rem);
     font-weight: 600;
     color: $primary-color;
     text-decoration: none;
@@ -104,7 +93,7 @@
   }
 }
 
-//menu for devices max-width 1200px
+//menu for devices  with a max-width of 1200px
 
 .menu {
   display: none;

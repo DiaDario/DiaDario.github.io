@@ -53,7 +53,7 @@ button, #myForm button {
   gap: clamp(50px, 8vw, 155px);
 }
 
-.description .social-icons-container .tooltip, .progress-container .tooltip, .home-left-content .social-icons-container .tooltip, .resize-button .tooltip {
+.description .social-icons-container .tooltip, .progress-container .tooltip, .home-left-content .social-icons-container .tooltip {
   opacity: 0;
   position: absolute;
   top: 120%;
@@ -189,7 +189,7 @@ button, #myForm button {
   width: 120px;
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   align-items: center;
   left: 0.3%;
   align-self: center;
@@ -219,8 +219,7 @@ button, #myForm button {
 }
 
 .resize-button {
-  margin: 0 auto;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #ededed;
   cursor: pointer;
@@ -234,17 +233,10 @@ button, #myForm button {
 .resize-button.active:hover .tooltip {
   display: none;
 }
-.resize-button .tooltip {
-  top: 30%;
-  left: 160%;
-}
-.resize-button:hover .tooltip {
-  opacity: 1;
-}
 
 .navbar {
   display: flex;
-  width: clamp(320px, 18.8vw, 365px);
+  width: clamp(350px, 19.2vw, 375px);
   justify-content: space-between;
   align-items: center;
   transition: 0.3s ease-in-out;
@@ -253,7 +245,7 @@ button, #myForm button {
   display: flex;
 }
 .navbar a {
-  font-size: clamp(1.05rem, 0.97vw, 1.19rem);
+  font-size: clamp(1.1rem, 0.97vw, 1.19rem);
   font-weight: 600;
   color: #ededed;
   text-decoration: none;
